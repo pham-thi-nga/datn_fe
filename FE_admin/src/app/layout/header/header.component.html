@@ -1,0 +1,24 @@
+<mat-toolbar>
+  <mat-toolbar-row class="justify-content-between">
+    <button mat-icon-button (click)="toggleSidebar()">
+      <mat-icon class="text-light">menu</mat-icon>
+    </button>
+    <div class="row mr-2 ml-auto">
+      <ul class="row m-0 align-items-center">
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
+            <img src="https://scontent.fhan3-4.fna.fbcdn.net/v/t1.15752-9/304264418_3311475409133085_4883623477871713690_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dsleeeMDWvcAX-KlOoS&_nc_oc=AQk3vEOF-3XMeREWiPmS5TVrFYaTu1Voz836HcW34N0ugncwOoq3hxFpLqzdAnv3QUzAWDwuVncNKx3LF0g9MiRP&tn=5_tEq9UB6_6hCTbS&_nc_ht=scontent.fhan3-4.fna&oh=03_AVImB6r2H50gHAJAK2-isRHNIcEw-236a_nA4zKXAihYDQ&oe=63425EB3" alt="" class="user-image mr-1 p-2" />
+            Anhcoming
+            <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+          </button>
+          <mat-menu  #menu="matMenu">
+            <button style="color:black" mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              Logout
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
