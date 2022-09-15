@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AccountCreateComponent } from './views/account/account-create/account-create.component';
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { SpinnerComponent } from './share/spinner/spinner.component';
+import { LoginComponent } from './views/authentication/login/login.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SpinnerComponent } from './share/spinner/spinner.component';
     AccountComponent,
     AccountCreateComponent,
     SpinnerComponent,
+    LoginComponent,
   ],
   imports: [
     ReactiveFormsModule,
