@@ -1,6 +1,6 @@
 <mat-nav-list>
-  <div class="logo " >
-    <img  src="https://t4.ftcdn.net/jpg/03/30/51/87/360_F_330518767_Gkkl2yDiHs6Ksik1uTByyqObrDw39nbG.jpg"/>
+  <div class="logo ">
+    <i class="bi bi-person-circle"> Admin</i>
   </div>
   <!-- <mat-divider></mat-divider> -->
   <h2 matSubheader class=" mt-2" style="color:gray">APPLICATION</h2>
@@ -12,12 +12,59 @@
     <mat-icon>mail</mat-icon> Đơn hàng
   </a>
   <hr style="color:gray">
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/category">
-    <mat-icon>assessment</mat-icon> Loại sản phẩm
-  </a>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/product">
-    <mat-icon>card_travel</mat-icon> Sản phẩm
-  </a>
+  <!-- Danh mục sản phẩm -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="cate">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dsdm"
+        aria-expanded="false" aria-controls="collapseTwo">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category">
+          <mat-icon>assessment</mat-icon> Danh mục sản phẩm
+        </a>
+      </button>
+    </h2>
+    <div id="dsdm" class="accordion-collapse collapse" aria-labelledby="cate"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category/all">
+          Tất cả danh mục
+        </a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category/add">
+          Thêm mới
+        </a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category/search">
+          Tìm kiếm
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Sản phẩm -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="product">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dssp"
+        aria-expanded="false" aria-controls="dssp">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product">
+          <mat-icon>card_travel</mat-icon> Sản phẩm
+        </a>
+      </button>
+    </h2>
+    <div id="dssp" class="accordion-collapse collapse" aria-labelledby="product"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product/all">
+          Tất cả sản phẩm
+        </a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product/add">
+          Thêm mới
+        </a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product/search">
+          Tìm kiếm
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  
   <hr style="color:gray">
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/account">
     <mat-icon>account_circle</mat-icon> Tài khoản
