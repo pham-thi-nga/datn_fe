@@ -18,6 +18,7 @@ import { CategoryComponent } from './views/category/category.component';
 import { AccountComponent } from './views/account/account.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountCreateComponent } from './views/account/account-create/account-create.component';
+import { CategoryCreateComponent } from './views/category/category-create/category-create.component';
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { SpinnerComponent } from './share/spinner/spinner.component';
 
@@ -32,6 +33,7 @@ import { SpinnerComponent } from './share/spinner/spinner.component';
     CategoryComponent,
     AccountComponent,
     AccountCreateComponent,
+    CategoryCreateComponent,
     SpinnerComponent,
   ],
   imports: [
