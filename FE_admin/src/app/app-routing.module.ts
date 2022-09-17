@@ -7,9 +7,10 @@ import { CategoryComponent } from './views/category/category.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
+import { LoginComponent } from './views/authentication/login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'account', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
 
   { path: 'order', component: OrderComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'category-create/:id', component: CategoryCreateComponent },
 
 
+  { path: 'login', component: LoginComponent },
 
 
 ];

@@ -21,6 +21,7 @@ import { AccountCreateComponent } from './views/account/account-create/account-c
 import { CategoryCreateComponent } from './views/category/category-create/category-create.component';
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { SpinnerComponent } from './share/spinner/spinner.component';
+import { LoginComponent } from './views/authentication/login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SpinnerComponent } from './share/spinner/spinner.component';
     AccountCreateComponent,
     CategoryCreateComponent,
     SpinnerComponent,
+    LoginComponent,
   ],
   imports: [
     ReactiveFormsModule,
