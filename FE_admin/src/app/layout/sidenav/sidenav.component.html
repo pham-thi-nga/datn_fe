@@ -6,12 +6,37 @@
   <h2 matSubheader class=" mt-2" style="color:gray">APPLICATION</h2>
 
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
-    <mat-icon>home</mat-icon> Trang chủ
+    <mat-icon>home</mat-icon> Bảng tin
   </a>
   <a mat-list-item routerLinkActive="list 1-item-active" routerLink="/order">
     <mat-icon>mail</mat-icon> Đơn hàng
   </a>
   <hr style="color:gray">
+  <!-- Thư viện ảnh -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="img">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hinhAnh"
+        aria-expanded="false" aria-controls="collapseTwo">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image">
+          <mat-icon>assessment</mat-icon> Thư viện Ảnh
+        </a>
+      </button>
+    </h2>
+    <div id="hinhAnh" class="accordion-collapse collapse" aria-labelledby="img"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image">
+          Tất cả danh mục
+        </a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image-create">
+          Thêm mới
+        </a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image/search">
+          Tìm kiếm
+        </a>
+      </div>
+    </div>
+  </div>
   <!-- Danh mục sản phẩm -->
   <div class="accordion-item">
     <h2 class="accordion-header" id="cate">
@@ -63,8 +88,6 @@
     </div>
   </div>
 
-
-  
   <hr style="color:gray">
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/account">
     <mat-icon>account_circle</mat-icon> Tài khoản
