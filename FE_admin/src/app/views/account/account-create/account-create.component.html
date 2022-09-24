@@ -9,13 +9,13 @@
     <app-spinner *ngIf="show"></app-spinner>
     <form (ngSubmit)="onSubmit()" [formGroup]="accountForm">
       <div  class="container title row" style="width:30%;margin: auto;">
-        Tên <input type="text" class="form-control mb-2" placeholder="Tên" formControlName="name" value="{{data.name}}">
+        Tên <input type="text" class="form-control mb-2" placeholder="Tên" formControlName="name" value="{{data}}">
         Email<input type="email" class="form-control mb-2" placeholder="Email" formControlName="email"
           value="{{data.email}}">
         Số điện thoại<input type="text" class="form-control mb-2" placeholder="Số điện thoại" formControlName="phone"
           value="{{data.phone}}">
         Ngày sinh<input type="date" class="form-control mb-2" placeholder="Ngày sinh" formControlName="birthday"
-          value="{{data.birthday}}">
+          value="{{data}}">
         Quyền<select class="form-control mb-2">
           <option value="">Admin</option>
           <option value="">Nhân viên</option>

@@ -2,6 +2,7 @@ import { AccountService } from './../../services/account.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Account } from 'src/app/model/account';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -11,18 +12,20 @@ import { Account } from 'src/app/model/account';
 })
 export class AccountComponent implements OnInit {
   show = true
-  data: Account[] = [];
+  data:any = Account||null;
   constructor(private account: AccountService, public router: Router) {
   }
 
   ngOnInit(): void {
     this.getAllAccount();
   }
-  getAllAccount() {
-    this.account.getAllAccount().subscribe((res: any) => {
-      this.data = res;
-      console.log(res)
-      this.show=false
+  getAllAccount()  {
+    this.account.getAllAccount(0, 5).subscribe((res: any) => {
+      this.data = res.pageResponse;
+      // console.log(res.pageRespone)
+      console.log(res.pageResponse);
+
+      this.show = false
     });
   }
 

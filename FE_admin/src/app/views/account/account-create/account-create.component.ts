@@ -40,10 +40,10 @@ export class AccountCreateComponent implements OnInit {
       let body = {
         id: this.id,
         active: this.data.active == "true" ? true : false,
-        name: this.accountForm.get("name").value == "" ? this.data.name : this.accountForm.get("name").value,
+        name: this.accountForm.get("name").value == "" ? this.data : this.accountForm.get("name").value,
         email: this.accountForm.get("email").value == "" ? this.data.email : this.accountForm.get("email").value,
         phone: this.accountForm.get("phone").value == "" ? this.data.phone : this.accountForm.get("phone").value,
-        birthday: this.accountForm.get("birthday").value == "" ? this.data.birthday : this.accountForm.get("birthday").value
+        birthday: this.accountForm.get("birthday").value == "" ? this.data : this.accountForm.get("birthday").value
       }
       console.log("body", body)
       if (this.id == null || this.id == "") {
@@ -76,7 +76,7 @@ export class AccountCreateComponent implements OnInit {
   getDetail() {
     this.account.getDetail(this.id).subscribe((res: any) => {
       this.data = res;
-      console.log("Ở đây", this.data.name)
+      console.log("Ở đây", this.data)
       this.show = false
     })
   }
