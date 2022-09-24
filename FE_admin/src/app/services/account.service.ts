@@ -27,7 +27,7 @@ export class AccountService {
     return this.http.put("https://62ec26fa818ab252b6f8c236.mockapi.io/api/v1/account/" + id, body)
   }
   getDetail(id): (Observable<Object>) {
-    return this.http.get("https://62ec26fa818ab252b6f8c236.mockapi.io/api/v1/account/" + id)
+    return this.http.get(API+"/user/"+id)
   }
   delete(id): (Observable<Object>) {
     return this.http.delete("https://62ec26fa818ab252b6f8c236.mockapi.io/api/v1/account/" + id)

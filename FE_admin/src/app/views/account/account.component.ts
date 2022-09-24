@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Account } from 'src/app/model/account';
 import { environment } from 'src/environments/environment';
+import { MatDialogRef } from '@angular/material/dialog';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class AccountComponent implements OnInit {
     this.getAllAccount();
   }
   getAllAccount()  {
-    this.account.getAllAccount(0, 5).subscribe((res: any) => {
+    this.account.getAllAccount(0, 9).subscribe((res: any) => {
       this.data = res.pageResponse;
       // console.log(res.pageRespone)
       console.log(res.pageResponse);

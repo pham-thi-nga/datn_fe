@@ -22,7 +22,7 @@ import { CategoryCreateComponent } from './views/category/category-create/catego
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { SpinnerComponent } from './share/spinner/spinner.component';
 import { LoginComponent } from './views/authentication/login/login.component';
-
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +52,7 @@ import { LoginComponent } from './views/authentication/login/login.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
