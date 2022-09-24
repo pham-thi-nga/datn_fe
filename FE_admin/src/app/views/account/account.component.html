@@ -69,10 +69,15 @@
               <td>{{item.email}}</td>
               <td>{{item.phone}}</td>
               <td>{{item.address}}</td>
-              <td>{{item.role.name}}</td>
               <td>
-                <span class="badge badge text-bg-info text-light">{{item.role.status==0?"Hoạt động":""}}</span>
-                <span class="badge badge text-bg-secondary">{{item.role.status==1?"Ngưng hoạt động":""}}</span>
+                <span class="badge badge text-bg-success text-light">{{item.role.name}}</span>
+                <!-- <span class="badge badge text-bg-secondary">{{item.role.name==1?"Ngưng hoạt động":""}}</span> -->
+
+
+              </td>
+              <td>
+                <span class="badge badge text-bg-info text-light">{{item.status==0?"Hoạt động":""}}</span>
+                <span class="badge badge text-bg-secondary">{{item.status==1?"Ngưng hoạt động":""}}</span>
 
 
               </td>
@@ -103,15 +108,15 @@
         <nav aria-label="...">
           <ul class="pagination">
             <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1">Previous</a>
+              <a class="page-link" tabindex="-1">Trước</a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active">
-              <a class="page-link" href="#">2 <span class="sr-only"></span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item active"><a class="page-link">1</a></li>
             <li class="page-item">
-              <a class="page-link" href="#">Next</a>
+              <a class="page-link">2 <span class="sr-only"></span></a>
+            </li>
+            <li class="page-item"><a class="page-link" >3</a></li>
+            <li class="page-item">
+              <a class="page-link">Sau</a>
             </li>
           </ul>
         </nav>
