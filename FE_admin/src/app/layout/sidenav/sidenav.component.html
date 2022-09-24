@@ -22,20 +22,6 @@
         </a>
       </button>
     </h2>
-    <div id="hinhAnh" class="accordion-collapse collapse" aria-labelledby="img"
-      data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image">
-          Tất cả danh mục
-        </a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image-create">
-          Thêm mới
-        </a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/image/search">
-          Tìm kiếm
-        </a>
-      </div>
-    </div>
   </div>
   <!-- Danh mục sản phẩm -->
   <div class="accordion-item">
@@ -47,20 +33,6 @@
         </a>
       </button>
     </h2>
-    <div id="dsdm" class="accordion-collapse collapse" aria-labelledby="cate"
-      data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category">
-          Tất cả danh mục
-        </a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category-create">
-          Thêm mới
-        </a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/category/search">
-          Tìm kiếm
-        </a>
-      </div>
-    </div>
   </div>
   <!-- Sản phẩm -->
   <div class="accordion-item">
@@ -72,20 +44,30 @@
         </a>
       </button>
     </h2>
-    <div id="dssp" class="accordion-collapse collapse" aria-labelledby="product"
-      data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product/all">
-          Tất cả sản phẩm
+  </div>
+
+   <!-- Màu sắc -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="product">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dssp"
+        aria-expanded="false" aria-controls="dssp">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product">
+          <mat-icon> format_color_fill</mat-icon> Màu sắc
         </a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product-create">
-          Thêm mới
+      </button>
+    </h2>
+  </div>
+
+   <!-- Size -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="product">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dssp"
+        aria-expanded="false" aria-controls="dssp">
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product">
+          <mat-icon>card_travel</mat-icon> Kích cỡ
         </a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/product/search">
-          Tìm kiếm
-        </a>
-      </div>
-    </div>
+      </button>
+    </h2>
   </div>
 
   <hr style="color:gray">

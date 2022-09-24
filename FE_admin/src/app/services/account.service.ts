@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Account } from '../model/account';
 
 const API = environment.baseUrl;
 
@@ -15,8 +16,8 @@ export class AccountService {
   constructor(private http: HttpClient) {
 
   }
-  getAllAccount(): (Observable<Object>) {
-    return this.http.get("https://62ec26fa818ab252b6f8c236.mockapi.io/api/v1/account")
+  getAllAccount(pageNumber:any, pageSize:any): (Observable<Object>) {
+    return this.http.get(API + "/user/find-by-page?pageNumber=" + pageNumber + "&pageSize=" + pageSize)
   }
 
   createAccount(body): (Observable<Object>) {

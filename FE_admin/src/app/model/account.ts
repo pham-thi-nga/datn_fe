@@ -1,11 +1,11 @@
 export class Account {
   id: string;
-  name: string;
   phone: string;
-  birthday: string;
-  permission: string;
-  createdDate: string;
+  fullname: string;
+  image:string;
+  address:string;
   active: string;
   email: string;
   password: string;
+  role:string;
 }
